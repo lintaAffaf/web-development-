@@ -1,0 +1,89 @@
+.navbar.scrolled {
+  background-color: #111 !important;
+  transition: background-color 0.4s ease;
+}
+/* General */
+body {
+  scroll-behavior: smooth;
+  background: linear-gradient(to right,  #075772, #c286dd, #0dcac1);
+
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right,  #075772, #c286dd, #0dcac1);
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Navbar */
+.navbar-dark .navbar-brand {
+  color:white ;
+  font-weight: 600;
+  font-weight: bold;
+}
+.brand-text {
+  display: inline-block;
+  line-height: 1.1;  
+  font-size: 1.2rem; 
+  vertical-align: middle; 
+  margin-left: 8px;    
+}
+
+/* Cards */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Skill Icons */
+.text-purple {
+  color: #7952b3;
+}
+
+/* Footer / Contact */
+#contact {
+  background: linear-gradient(300deg, #075772, #c286dd, #0dcac1);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+#about{
+  color:antiquewhite;
+  background: linear-gradient(300deg, #075772, #c286dd, #0dcac1);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  margin-top: 50px;
+  padding-top: 5%  !important;
+  padding-bottom: 5% !important;
+  font-size: 1.2rem;
+}
+#projects{
+   padding-top: 5%  !important;
+  padding-bottom: 10% !important;
+}
+
+#skills{
+ padding-top: 5%  !important;
+  padding-bottom: 5% !important;
+}
+.profilepic{
+  border-color: aqua;
+}
+#contactme{
+  margin-top:20px;
+}
+.lead{
+  color:black;
+}
+
+.navbar-nav.nav-item{
+  color:black;
+}
