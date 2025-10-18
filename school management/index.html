@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School System Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home"> <img src="images/navbar logo .png" alt="school Logo" height="50" width="50">
+  <span class="brand-text">Fazaia Inter College </span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+        </ul>
+      </div>
+      <button id="darkModeToggle" class="btn btn-outline-light ms-3">
+       <i class="bi bi-moon-fill"></i>
+</button>
+
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section id="home" class="hero-section">
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=80" class="d-block w-100" alt="School Building">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome to Fazaia </h1>
+            <p>Inspiring young minds for a brighter future.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/notebook.jpg" class="d-block w-100" alt="notebook">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Quality Education</h1>
+            <p>Empowering students through innovative learning.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/classroom.png" class="d-block w-100" alt="classroom">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Building Leaders</h1>
+            <p>Shaping the future with excellence and compassion.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Admission Section -->
+  <section id="admission" class="py-5">
+    <div class="container">
+      <h2  class="text-center mb-4 text-primary">Admission Form </h2>
+      <form id="admissionForm" class="p-4 border rounded bg-light">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" required />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" required />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Grade Level Applying For</label>
+          <select class="form-select" required>
+            <option value="">Select Grade</option>
+            <option>Grade 6</option>
+            <option>Grade 7</option>
+            <option>Grade 8</option>
+            <option>Grade 9</option>
+            <option>Grade 10</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Address</label>
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+      </form>
+
+      <div id="acknowledgement" class="alert alert-success mt-4 d-none">
+        Thank you for applying. Please prepare for your admission test. You will receive further information via email.
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Section -->
+  <section id="faculty" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Our Faculty</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/teacher1.png" class="card-img-top" alt="Teacher"  style="height:250px; object-fit:cover" />
+            <div class="card-body text-center">
+              <h5 class="card-title">Ms. naila Naveed</h5>
+              <p class="text-muted">Mathematics</p>
+              <p>Dedicated to making math enjoyable and understandable for every student.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/teacher2.png" class="card-img-top" alt="Teacher" style="height:250px; object-fit:cover"/>
+            <div class="card-body text-center">
+              <h5 class="card-title">Ms. Sarah Khan</h5>
+              <p class="text-muted">Science</p>
+              <p>Encourages curiosity and discovery through hands-on learning experiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card shadow">
+            <img src="images/teacher3.png" class="card-img-top" alt="Teacher" style="height:250px; object-fit:cover"/>
+            <div class="card-body text-center">
+              <h5 class="card-title">Sir jonathan</h5>
+              <p class="text-muted">English</p>
+              <p>Believes in building strong communication skills through creative expression.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+ <section id="vision" class="vision-section text-light">
+  <div class="container py-5">
+    <div class="row align-items-center">
+      <!-- Left: Principal Image + Name -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="images/principal .png" alt="Principal" class="img-fluid rounded shadow-lg" width="300">
+        <h4 class="mt-3">
+          <a href="principal-bio.html" target="_blank" class="principal-link text-light text-decoration-none">
+            Dr. Ijaz Aslam 
+          </a>
+        </h4>
+        <p class="text-secondary">Principal, Fazaia Inter College </p>
+      </div>
+
+      <!-- Right: Vision Text -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">Our Vision</h2>
+        <p class="lead">
+          Our vision is to empower students with the knowledge, creativity, and confidence to become leaders in technology and innovation.
+          We strive to build a community that values excellence, inclusivity, and lifelong learning.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Subjects Section -->
+  <section id="subjects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 text-primary">Subjects Offered</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead class="table-primary">
+            <tr>
+              <th>Subject</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Mathematics</td><td>Develops logical reasoning and problem-solving abilities.</td></tr>
+            <tr><td>Science</td><td>Explores natural phenomena and promotes inquiry-based learning.</td></tr>
+            <tr><td>English</td><td>Improves reading, writing, and communication skills.</td></tr>
+            <tr><td>Computer Science</td><td>Introduces coding, technology, and digital literacy.</td></tr>
+            <tr><td>History</td><td>Teaches lessons from the past to understand the present and future.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>Contact: info@fazaia.com | Phone: +92 300 1234567</p>
+      <p>Follow us on:
+        <a href="#" class="text-white ms-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white ms-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white ms-2"><i class="bi bi-twitter"></i></a>
+      </p>
+      <p class="mb-0">&copy; 2025 Fazaia . All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

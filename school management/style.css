@@ -1,0 +1,106 @@
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: rgba(189, 86, 18, 0.918) !important ;
+}
+/* Hero Carousel */
+.hero-section img {
+  height: 80vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.carousel-caption p {
+  font-size: 1.25rem;
+}
+
+
+/* Vision Section */
+.vision-section {
+  background-color: #0d6efd;
+  padding: 80px 0;
+}
+
+/* Footer */
+footer {
+  background: #0d6efd;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Faculty Cards */
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #f8f9fa !important;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .card,
+.dark-mode .table,
+.dark-mode .bg-light {
+  background-color: #2c2c2c !important;
+  color: #f8f9fa !important;
+}
+
+.dark-mode .btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.dark-mode .btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+/* Vision Section Styling */
+.vision-section {
+  background-image: url('images/schoolbg.png'); /* your background image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.vision-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay for text readability */
+}
+
+.vision-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.principal-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
